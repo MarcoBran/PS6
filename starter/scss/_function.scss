@@ -1,0 +1,13 @@
+@function font-size($dimensione: "default"){
+    @if ($dimensione=="md"){
+        @return 18px
+    }
+    @if ($dimensione=="sm"){
+        @return 16px
+    }
+    @if ($dimensione=="lg"){
+        @return 20px
+    }
+
+    @return 1 rem;
+}

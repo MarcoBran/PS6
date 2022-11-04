@@ -1,0 +1,43 @@
+.titolo {
+    background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+$colore-primo: rgba(116, 49, 249, 255);
+
+@mixin viola {
+    background-color: $colore-primo;
+    color: white;
+}
+
+nav {
+    @include viola;
+}
+
+#button {
+    @include viola;
+    border: transparent;
+}
+
+footer {
+    @include viola;
+}
+footer h4 {
+    font-weight: lighter;
+}
+
+@mixin rosso {
+    color: red;
+}
+
+.nav-link {
+    @include rosso;
+}
+#contenitore {
+    background-color: rgb(245, 245, 245);
+  }
+img{
+    width: 100px;
+}
